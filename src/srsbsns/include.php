@@ -1,3 +1,4 @@
 <?php 
 
-require("vendor/autoload.php");
+define("RESOURCEPATH", "Resources/");
+require("../../vendor/autoload.php");

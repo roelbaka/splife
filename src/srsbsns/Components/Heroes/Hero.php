@@ -9,7 +9,7 @@ class Hero
 
     public function __construct($name, $description)
     {
-        $this->name = $name;
+        $this->name        = $name;
         $this->description = $description;
     }
 
@@ -21,5 +21,10 @@ class Hero
     public function getDescription()
     {
         return $this->description;
+    }
+
+    public function serialize()
+    {
+        return [$this->name, $this->description];
     }
 }

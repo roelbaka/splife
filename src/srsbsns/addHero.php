@@ -12,4 +12,9 @@ $heroRepository->save($hero1);
 
 
 $heroes = $heroRepository->loadAll();
-print_r($heroes);
+
+foreach($heroes as $hero){
+    $hero = $heroRepository->load($hero);
+}
+echo $hero->getName();
+print_r($hero);

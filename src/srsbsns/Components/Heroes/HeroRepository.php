@@ -20,6 +20,7 @@ class HeroRepository extends Repository
 
     public function load($heroName)
     {
-        return parent::load($filePath.$heroName);
+        $loadedHero = parent::load($this->filePath.$heroName);
+        return Hero::deserialize($loadedHero);
     }
 }

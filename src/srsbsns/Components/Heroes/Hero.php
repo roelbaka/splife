@@ -25,6 +25,17 @@ class Hero
 
     public function serialize()
     {
-        return [$this->name, $this->description];
+        return [
+            'name' => $this->name, 
+            'description' => $this->description
+        ];
+    }
+
+    public static function deserialize($data)
+    {
+        return new static(
+            $data['name'],
+            $data['description']
+        ); 
     }
 }

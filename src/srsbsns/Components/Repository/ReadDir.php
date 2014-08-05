@@ -10,7 +10,7 @@ class ReadDir
 
         $fileList = array();
         while ($dir && ($file = readdir($dir)) !== false) {
-            if ($file != "." && $file != "..") {
+            if ($file != "." && $file != ".." && $file!= ".gitkeep") {
                $fileList[] = $file;
             }
         }

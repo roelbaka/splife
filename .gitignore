@@ -1,2 +1,4 @@
 vendor/
+Resources/Saves/Heroes/*.json
+Resources/Saves/Items/*.json
 composer.lock

@@ -4,8 +4,9 @@ namespace srsbsns\Components\Repository;
 
 class Save
 {
-    public function save()
+    public function save(File $file)
     {
-        // code...
+        $fileWriter = new FileWriter();
+        $fileWriter->write($file);
     }
 }

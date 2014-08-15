@@ -15,7 +15,7 @@ $itemRepository->save($item);
 $items = $itemRepository->loadAll();
 
 foreach($items as $item){
-    $item = $itemRepository->load($item);
+    $item = $iktemRepository->load($item);
 }
 echo $item->getName();
 print_r($item);

@@ -1,6 +1,6 @@
 {
     "require": {
-        "beberlei/assert": "@stable"
+        "broadway/broadway":"~0.1.0"
     },
 
     "autoload": {
